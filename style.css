@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+* {
+  outline: none !important;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: relative;
+  z-index: 100000;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+.navbar {
+  background: transparent !important;
+  transition: 0.5s;
+}
+
+.navbar.scrolled {
+  background: #00334d !important;
+  transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #00334d;
+  background: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+  color: #00334d;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+.banner {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url();
+  background-size: cover;
+  margin-bottom: 0;
+  min-height: 100vh;
+  padding: 150px 0;
+}
+
+/* Shadow top */
+.banner:before,
+.contact:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(#00334d, transparent);
+  pointer-events: none;
+}
+
+/* Shadow bottom */
+.banner::after,
+.contact::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  background: linear-gradient(360deg, #00334d, transparent);
+  pointer-events: none;
+}
+
+.height100p {
+  height: 100vh;
+}
+
+/* Banner text */
+.h100 h1 {
+  text-align: center;
+  margin-top: 14vh;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.h100 p {
+  color: #fff;
+  font-size: 1.3rem;
+  position: relative;
+  text-align: center;
+}
+
+.jumbotron #myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: inherit;
+}
+
+.contentBox {
+  position: relative;
+  bottom: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.contentBox h1,
+.sec2 h2 {
+  font-size: 3rem;
+  padding: 20px 0 0 0;
+}
+
+/* Explore The World Area */
+.sec1 {
+  padding: 0px 0;
+  background: #00334d;
+}
+
+.sec1 {
+  padding: 20px 0;
+}
+
+.container {
+  z-index: 100;
+}
+
+.headerText {
+  color: #fff;
+}
+
+/* Height of Sec1 here */
+.headerText h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.headerText h2 {
+    font-size: 2rem;
+  }
+
+/* Images + Margin to control background*/
+.placeBox {
+  position: relative;
+  max-width: 300px;
+  height: 400px;
+  margin: 0 0 220px 0;
+  background: #00334d;
+  margin-top: 10px;
+  z-index: 100px;
+}
+
+/*Settings for all images*/
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.placeBox .imgBx {
+  width: 100%;
+  height: 100%;
+}
+
+.placeBox .imgBx img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(400px at center 100px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.placeBox .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+}
+
+.placeBox .content h3 {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  background: rgb(0, 51, 77);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.placeBox .content h3 span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Size of background w/ height */
+.sec2 {
+  position: relative;
+  background: url(Pictures/Innsbruck.jpg);
+  height: auto;
+  padding: 300px 0;
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+
+.sec2 h2 {
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+}
+
+/* Read More Button Styling section 2*/
+.btnD1 {
+  border: 2px solid #fff;
+  color: #00334d;
+  background: #fff;
+  border-radius: 50px;
+  padding: 10px 50px;
+  font-size: 1.15rem;
+  outline: none;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.blog {
+  position: relative;
+  padding: 0px 0 40px;
+  background: #00334d;
+}
+
+.blogpost {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  background: #fff;
+}
+
+.blogpost .imgBx {
+  height: 475px;
+}
+
+.blogpost .imgBx img {
+  width: 100%;
+  height: 100%;
+  height: 475px;
+  object-fit: cover;
+}
+
+.blogpost .content {
+  padding: 15px;
+}
+
+/* Text Size 4 Posts */
+.blogpost .content h1 {
+  margin: 0;
+  padding: 0 0 10px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Read More Buttons 4 Posts */
+.btnD2,
+.btnD2:hover {
+  background: #262626;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  float: right;
+}
+
+/* Background size of 3 top images area */
+#container1 #box {
+  position: relative;
+  width: auto;
+  height: 450px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Speed of circle hover - 3 top images*/
+#container1 #box .imgBx1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  clip-path: circle(400px at center 100px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+/* Clip path on hover 3 top images */
+#container1 #box:hover .imgBx1 {
+  clip-path: circle(80px at center 100px);
+  transition-delay: 0s;
+}
+
+/* Formatting the 3 top images */
+#container1 #box .imgBx1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Control Height of text here */
+#container1 #box #content1 {
+  position: absolute;
+  left: 35px;
+  bottom: 0;
+  width: 100%;
+  height: 83%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Read More Button top 3 images */
+#container1 #box #content1 a {
+  text-decoration: none;
+  background: #fff;
+  color: #000;
+  padding: 5px;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 15%;
+  z-index: 20;
+}
+
+/*Text when hovering over 3 pictures near top*/
+#container1 #box #content1 #title1,
+#container1 #box #content1 #span1,
+#container1 #box #content1 a {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(20px);
+}
+
+/* Main Text when hovering over 3 pictures near top*/
+#container1 #box:hover #content1 #title1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s
+}
+
+/*Subtext when hovering over 3 pictures near top*/
+#container1 #box:hover #content1 #span1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s
+}
+
+/*Text on button when hovering over 3 pictures near top*/
+#container1 #box:hover #content1 a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s;
+}
+
+/* -------------------Contact Section-----------------*/
+
+/*Contact picture near bottom*/
+.contact {
+  position: center;
+  padding: 10px 0;
+  background: url(Pictures/Dolomites.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/*Contact Form Settings*/
+.contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 0;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+/* Animation when entering form */
+.contact .form-control:focus,
+.contact .form-control:hover {
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: none;
+}
+
+/*Size of message box*/
+.contact .textarea {
+  min-height: 250px;
+}
+
+/*Font size of text above boxes*/
+.contact label {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+/* Contact image */
+.contact {
+  padding: 80px 0;
+  position: center;
+}
+
+/*Footer settings*/
+
+footer {
+  background: #00334d;
+  padding: 20px 0 20px;
+}
+
+/*Gallery*/
+.masonry-grid {
+  column-width: 296px;
+  column-gap: 24px;
+}
+
+/*---------------Social Media Section-------------*/
+
+/*centering social media icons*/
+.sci {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Spacing between social media icons*/
+.sci li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+/*Settings for the Facebook Icon*/
+.sci li a .fa-facebook {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 40px;
+  vertical-align: middle;
+  background: #3b5998;
+  color: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+}
+
+/*Settings for the Linkedin Icon*/
+.sci li a .fa-linkedin {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+  vertical-align: middle;
+  background: #fff;
+  color: #0e76a8;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+}
+
+/*Settings for the Instagram Icon*/
+.sci li a .fa-instagram {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+}
+
+/*---------Display Size Formatting Settings------------*/
+
+/*Settings for Navigation Bar*/
+@media (min-width: 992px) {
+  .navbar-light .navbar-toggler {
+    background: #fff;
+    border-radius: 0;
+  }
+
+/* Placeholder divs to prevent page jumping */
+.cell {
+  position: relative;
+  margin-bottom: 24px;
+  height: 0;
+  overflow: hidden;
+  background: #eee;
+  break-inside: avoid;
+  border-radius: 8px;
+}
+
+.cell img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ratio1x1 {
+  padding-bottom: 100%;
+}
+
+.ratio3x4 {
+  padding-bottom: 133.33%;
+}
+
+.ratio4x3 {
+  padding-bottom: 75%;
+}
+
+.ratio16x9 {
+  padding-bottom: 56.25%;
+}
+
+.ratio9x16 {
+  padding-bottom: 177.77%;
+}
