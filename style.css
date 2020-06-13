@@ -1,52 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
 
+/*General settings*/
 * {
   outline: none !important;
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 
+/*Font family*/
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-header {
-  position: relative;
-  z-index: 100000;
-}
-
+/*Size of text for most areas*/
 p {
   font-size: 1.15rem;
 }
 
+/*Transparent navbar at the top*/
 .navbar {
   background: transparent !important;
-  transition: 0.5s;
 }
 
+/*Colour of navbar after scrolling down a bit*/
 .navbar.scrolled {
   background: #00334d !important;
   transition: 0.5s;
 }
 
+/*Colour of navbar text and small box*/
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  color: #00334d;
+  color: #000;
   background: #fff;
 }
 
-.navbar-light .navbar-nav .active>.nav-link:hover {
-  color: #00334d;
-}
-
+/*Colour of sections in navbar*/
 .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/*Colour of section when hovering in navbar*/
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(255, 255, 255, 1);
 }
 
+/*Top left text settings*/
 .navbar-light .navbar-brand,
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus,
@@ -56,11 +54,13 @@ p {
   font-weight: 600;
 }
 
+/*Spacing between sections in navbar*/
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 
+/*Jumbotron*/
 .banner {
   position: relative;
   top: 0;
@@ -71,36 +71,6 @@ p {
   margin-bottom: 0;
   min-height: 100vh;
   padding: 150px 0;
-}
-
-/* Shadow top */
-.banner:before,
-.contact:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  background: linear-gradient(#00334d, transparent);
-  pointer-events: none;
-}
-
-/* Shadow bottom */
-.banner::after,
-.contact::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0px;
-  background: linear-gradient(360deg, #00334d, transparent);
-  pointer-events: none;
-}
-
-.height100p {
-  height: 100vh;
 }
 
 /* Banner text */
@@ -114,6 +84,7 @@ p {
   font-size: 3rem;
 }
 
+/*Smaller text in jumbotron and third section*/
 .h100 p {
   color: #fff;
   font-size: 1.3rem;
@@ -121,6 +92,7 @@ p {
   text-align: center;
 }
 
+/*Jumbotron video*/
 .jumbotron #myVideo {
   position: absolute;
   right: 0;
@@ -130,6 +102,7 @@ p {
   z-index: inherit;
 }
 
+/*Centers title text after the 3 pic section*/
 .contentBox {
   position: relative;
   bottom: 160px;
@@ -140,26 +113,18 @@ p {
   z-index: 10;
 }
 
-.contentBox h1,
-.sec2 h2 {
-  font-size: 3rem;
-  padding: 20px 0 0 0;
-}
-
-/* Explore The World Area */
+/* Background color of top 3 pic area*/
 .sec1 {
   padding: 0px 0;
   background: #00334d;
 }
 
+/*Padding above and below top 3 pics*/
 .sec1 {
   padding: 20px 0;
 }
 
-.container {
-  z-index: 100;
-}
-
+/*Colour of text above top 3 pics*/
 .headerText {
   color: #fff;
 }
@@ -171,6 +136,7 @@ p {
   margin-top: 50px;
 }
 
+/*Size of header text above 3 image section*/
 .headerText h2 {
     font-size: 2rem;
   }
@@ -193,23 +159,10 @@ img {
   height: auto;
 }
 
-.placeBox .imgBx {
-  width: 100%;
-  height: 100%;
-}
-
-.placeBox .imgBx img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  clip-path: circle(400px at center 100px);
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
-
+/*Height of text after hovering on top 3 pics*/
 .placeBox .content {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -218,10 +171,11 @@ img {
   align-items: flex-end;
 }
 
+/*Top 3 pics settings for text*/
 .placeBox .content h3 {
   position: relative;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   background: rgb(0, 51, 77);
   color: #fff;
   font-size: 20px;
@@ -230,6 +184,7 @@ img {
   text-align: center;
 }
 
+/*Smaller text in top 3 pics*/
 .placeBox .content h3 span {
   font-size: 16px;
   font-weight: 500;
@@ -246,13 +201,6 @@ img {
   display: flex;
 }
 
-.sec2 h2 {
-  font-weight: 800;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 4.5rem;
-}
-
 /* Read More Button Styling section 2*/
 .btnD1 {
   border: 2px solid #fff;
@@ -266,12 +214,14 @@ img {
   margin-top: 10px;
 }
 
+/*Blue background spacing*/
 .blog {
   position: relative;
   padding: 0px 0 40px;
   background: #00334d;
 }
 
+/*Spacing between 4 pics and title*/
 .blogpost {
   position: relative;
   width: 100%;
@@ -279,10 +229,7 @@ img {
   background: #fff;
 }
 
-.blogpost .imgBx {
-  height: 475px;
-}
-
+/*Size of 4 pictures*/
 .blogpost .imgBx img {
   width: 100%;
   height: 100%;
@@ -290,8 +237,9 @@ img {
   object-fit: cover;
 }
 
+/*Spacing between edge of white box and contents*/
 .blogpost .content {
-  padding: 15px;
+  padding: 10px;
 }
 
 /* Text Size 4 Posts */
@@ -467,6 +415,39 @@ footer {
   column-gap: 24px;
 }
 
+/* Needed for gallery */
+
+.cell {
+  position: relative;
+  margin-bottom: 24px;
+  height: 0;
+  overflow: hidden;
+  background: #eee;
+  break-inside: avoid;
+  border-radius: 8px;
+}
+
+/* Needed for gallery */
+.ratio1x1 {
+  padding-bottom: 100%;
+}
+
+.ratio3x4 {
+  padding-bottom: 133.33%;
+}
+
+.ratio4x3 {
+  padding-bottom: 75%;
+}
+
+.ratio16x9 {
+  padding-bottom: 56.25%;
+}
+
+.ratio9x16 {
+  padding-bottom: 177.77%;
+}
+
 /*---------------Social Media Section-------------*/
 
 /*centering social media icons*/
@@ -540,40 +521,3 @@ footer {
     background: #fff;
     border-radius: 0;
   }
-
-/* Placeholder divs to prevent page jumping */
-.cell {
-  position: relative;
-  margin-bottom: 24px;
-  height: 0;
-  overflow: hidden;
-  background: #eee;
-  break-inside: avoid;
-  border-radius: 8px;
-}
-
-.cell img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.ratio1x1 {
-  padding-bottom: 100%;
-}
-
-.ratio3x4 {
-  padding-bottom: 133.33%;
-}
-
-.ratio4x3 {
-  padding-bottom: 75%;
-}
-
-.ratio16x9 {
-  padding-bottom: 56.25%;
-}
-
-.ratio9x16 {
-  padding-bottom: 177.77%;
-}
